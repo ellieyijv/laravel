@@ -11,10 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Services\Twitter;
+use App\Repositories\UserRepository;
 
+
+// Route::get('/', function (UserRepository $users) {
+//    dd($users);
+//     return view('welcome');
+// });
+
+
+Route::get('/', function (Twitter $twitter) {
+    dd($twitter);
+     return view('welcome');
+ });
 
 Route::get('/projects', function () {
     return view('projects');

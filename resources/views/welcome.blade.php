@@ -15,8 +15,9 @@
     </head>
     <body>
         <div id='app'>
-            <navbar></navbar>
+           
             <div class="container">
+                <navbar></navbar>
                <!-- <herobanner tasktitle="completed task">completed task</herobanner>
                <herobanner>Incompleted Tasks</herobanner> -->
                <herobanner></herobanner>
